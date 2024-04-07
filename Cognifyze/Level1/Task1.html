@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavel1-Task1</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        header ul
+        {
+            background-color: rgb(180, 243, 64);
+        }
+        p{
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 20px;
+        }
+
+       #home  h1 
+        {
+            text-align: center;
+            font-size: 60px;
+            background: -webkit-linear-gradient(green, yellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        #gallary img
+        {
+            width: 500px;
+            height: 400px;
+        }
+        #gallary img:hover
+        {
+            transform: scale(2);
+            transition: 2s;
+        }
+        form
+        {
+            width: 40%;
+            height: 40%;
+        }
+        #feedback
+        {
+            border: 2px solid greenyellow;
+            margin: auto;
+            width: 30%;
+            padding: 10px;
+            margin-top: 50px;
+        }
+        #feedback form{
+            width: 100%;
+        }
+    </style>
+</head>
+<body onload="bodyload()">
+    <header>
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a href="#home" data-bs-toggle="tab" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#gallary" data-bs-toggle="tab" class="nav-link">More Images</a></li>
+            <li class="nav-item"><a href="#feedback" data-bs-toggle="tab" class="nav-link">Feedback</a></li>
+        </ul>
+    </header>
+    <div class="tab-content">
+        <div class="tab-pane active" id="home">
+            <h1>Beauty of Nature</h1>
+            <p><span style="color: green; font-size: 40px; font-weight: bold;">N</span>ature has given us so much that we cannot even imagine. Life on this earth is possible only because of nature. There are many other planets in the universe but without this nature life is not possible there. Thus nature is the basis of our life. Nature is not the same everywhere on earth. According to the place, nature changes its appearance and according to that place provides us with resources, as well as provides comfort to our mind, our eyes.
+                Nature gives us so much, so it is our duty to respect it knowing its importance and not to destroy it for our selfishness. So that the children of man can also enjoy its beauty and take advantage of it, otherwise one day will be when people will be able to see and feel the beauty of this nature on the computer itself.
+            </p>
+            <p>
+             Nature is the most beautiful and attractive surrounding around us which makes us happy and provides us with a natural environment to live healthy. Our nature provides us with a variety of beautiful flowers, attractive birds, animals, green plants, blue sky, land, running rivers, sea, forests, air, mountains, valleys, hills and many more things. Our God has created beautiful nature for the healthy living of all of us. All the things we use for our living are the assets of nature which we should not spoil and damage. We should not destroy the originality of nature and should not cause imbalance in the ecosystem cycle.
+            </p>
+            <img src="../images/nature4.jpg" alt="">
+        </div>
+        <div class="tab-pane" id="gallary">
+            <h1 style="color: green; text-align: center;">Indian Nature Beauty</h1>
+            <img src="../images/nature1.jpg" class="ms-5">
+            <img src="../images/kerala.jpg" >
+            <img src="../images/himachal.cms">
+        </div>
+        <div class="tab-pane" id="feedback">
+            <h1 style="color: green; text-align: center;">Feedback</h1>
+            <form action="Task1.html">
+                <input type="text" class="form-control" placeholder="Enter Name"><br>
+                <input type="email" placeholder="Email-ID" class="form-control"><br>
+                <textarea cols="30" rows="10" placeholder="Give some feedback" class="form-control"></textarea>
+                <button class="btn btn-success mt-3">Submit</button>
+                <button type="reset" class="btn btn-warning mt-3">Reset</button>
+            </form>
+        </div>
+    </div>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

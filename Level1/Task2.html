@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavel2-Task2</title>
+    <style>
+        #btn
+        {
+            width: 80px;
+            height: 50px;
+            margin-left: 50%;
+        }
+        .container
+        {
+            margin: auto;
+            width: 40%;
+            padding: 10px;
+        }
+        .calci input
+        {
+            width: 40px;
+            height: 40px;
+            margin-left: 20px;
+        }
+    </style>
+    <script>
+        function changeColor()
+        {
+            var r = Math.floor(Math.random() * 255);
+            var g = Math.floor(Math.random() * 255);
+            var b = Math.floor(Math.random() * 255);
+            document.getElementById("btn").style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        }
+        function bodyload()
+        {
+            var now = new Date();
+            document.getElementById("time").innerHTML = now.toLocaleTimeString();
+            var msg = document.getElementById("message");
+            var hrs = now.getHours();
+            if(hrs>0 && hrs<=12)
+                msg.innerHTML = "Good Morning";
+            else if(hrs>=13 && hrs<=17)
+                msg.innerHTML = "Good Afternoon";
+            else if(hrs>=18 && hrs<=22)
+                msg.innerHTML = "Good Evening";
+            else
+                msg.innerHTML = "Good Night";
+        }
+        function add()
+        {
+            var a = parseInt(document.getElementById("no1").value);
+            var b = parseInt(document.getElementById("no2").value);
+            var result = document.getElementById("result");
+            result.value = a + b;
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <div class="container">
+        <h1>Changes Color</h1>
+        <button id="btn" onclick="changeColor()" title="click to change color"><span style="font-size: large; font-weight: bold;">Click</span></button>
+    </div>
+    <div class="container">
+        <h1>Greeting messages</h1>
+        <div class="greeting" style="margin-left: 50%;">
+            <h2>Time: <span id="time"></span></h2>
+            <h2 id="message"></h2>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Adding 2 Numbers</h1>
+        <div class="calci" style="margin-left: 50%;">
+            <input type="number" id="no1"><input type="number" id="no2">
+            <input type="number" id="result" placeholder="00" style="width: 60px;" readonly>
+            <button style="width: 50px; height: 30px;" onclick="add()">Add</button>
+        </div>
+    </div>
+</body>
+</html>

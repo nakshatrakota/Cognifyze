@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .header
+        {
+            width: 80%;
+            height: 20%;
+            margin: 20px auto 60px; 
+        }
+        .header img
+        {
+            width: 300px;  
+        }
+        .icon
+        {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(243, 240, 240);
+            border-radius: 100px;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .boxes
+        {
+            display: flex;
+        }
+        .icon span, .heading .cmp
+        {
+            background: -webkit-linear-gradient(rgb(45, 0, 128), rgb(255, 0, 212));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .benefit
+        {
+            width: 35%;
+            margin: auto;
+            background-image: linear-gradient(rgb(45, 0, 128), rgb(255, 0, 212));
+            color: white;
+            border-radius: 30px;
+        }
+
+        .btn
+        {
+            background-image: linear-gradient(rgb(45, 0, 128), rgb(255, 0, 212));
+            color: white;
+            margin-left: 70%;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            position: sticky;
+            top: 0px;
+        }
+        .qans
+        {
+            width: 750px; 
+            margin: auto; 
+            padding: 20px; 
+            padding-top: 0px; 
+            font-size: 20px;
+        }
+
+        @media (max-width: 770px)
+        {
+            .qans
+            {
+                width: 400px;
+            }
+            .boxes
+            {
+                display: block;
+            }
+            .benefit
+            {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+            .tnc
+            {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header d-flex justify-content-between navbar navbar-expand-lg">
+        <div class="navbar-brand">
+            <img src="../images/logo.jpg">
+        </div>
+        <div class="d-flex justify-content-between mt-5" style="width: 500px;" >
+            <div class="d-flex">
+                <div class="icon me-3">
+                    <span class="bi bi-geo-alt-fill"></span>
+                </div>
+                <div class="pt-3">
+                    <p style="line-height: 0px;">Location</p>
+                    <h6>Nagpur, Maharashtra</h6>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="icon me-3">
+                    <span class="bi bi-envelope-arrow-down-fill"></span>
+                </div>
+                <div class="pt-3">
+                    <p style="line-height: 0px;">Location</p>
+                    <h6>Nagpur, Maharashtra</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScd5TRLHUVC8kle_6k4JceWTcfknRoNsuRB6Q4ymhGrAIsnSA/viewform" target="_blank"class="btn">Apply Now for Internship <span class="bi bi-arrow-90deg-right"></span></a>
+    <div class="heading text-center fw-bold" style="font-size: 50px;">
+        Web Developer Internship Opportunities <br><span style="font-size: 20px;">at</span>
+        <br><span class="cmp">Cognifyz Technologies<span>
+    </div>
+    <div class="text-center" style="font-size: 20px;">
+        <p>We are hiring for Remote Full Stack Web Developer Interns (Frontend + Backend) interested candidates can apply.</p>
+        <p style="width: 80%; margin: 0px auto 60px; ">Web developer internships provide you with the opportunity to get hands-on exposure using web development tools on real-life projects. You’ll work with leading web developers and have the chance to learn from them. </p>
+    </div>
+    <div class="qans">
+        <p style="border-bottom: 1px dashed black;" class="pb-3 fw-bold">How will you be benefiting from this Internship program?</p>
+        <p class="mt-3"><span class="fw-bold">Answer: </span>You will get industrial experience and knowledge on respective domain along with Resume building, and LinkedIn Account building Skills.</p>
+    </div>
+    <div class="boxes justify-content-between">
+        <div class="benefit">
+            <div class="text-center border-bottom fs-4 p-2">Perks you will receive </div>
+            <div class="p-2">
+                <ul>
+                    <li>Offer Letter from Cognifyz Technologies</li>
+                    <li>Internship Certificate</li>    
+                    <li>Resume Building Support</li>
+                    <li>Letter of recommendation based on Performance</li>    
+                    <li>After clearing interview you will be eligible for a performance-based stipend.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="benefit">
+            <div class="text-center border-bottom fs-4 p-2">Qulification</div>
+            <div class="p-4 ps-5">
+                <ul>
+                   <li>BE, B. Tech, Graduation, (any stream).</li> 
+                   <li>Knowledge of Web Development technologies.</li> 
+                   <li>Proficiency in English Language.</li> 
+                    <li>Access to PC/Laptop and Internet.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 60px;">
+        <div class="w-75 m-auto tnc">
+            <div class="bg-dark-subtle border-bottom text-center fs-5 fw-bold p-4">
+                Terms and Conditions 
+            </div>
+            <div class="bg-body-tertiary">
+                <div style="margin-left: 30px;">
+                    <div class="fw-bold p-2 border-bottom">For the interview process:</div>
+                    <ul>
+                        <li>Successfully completing the first month of the internship is a prerequisite for eligibility.</li>
+                        <li>The interview process will be conducted after the completion of the internship.</li>
+                        <li>If you pass the interview, you will be eligible for a performance-based stipend.</li>
+                        <li>The stipend amount will reflect your performance and contribution during the internship.</li>
+                        <li>To participate in the interview process, there is a registration cost of 249/-.</li>
+                    </ul>
+                    <div class="fw-bold p-2 border-bottom">For opting out of the interview process:</div>
+                    <ul>
+                        <li>If you choose not to participate in the interview process, you have the option to pay 149/-.</li>
+                        <li>Paying this fee will grant you an Internship Completion Letter.</li>
+                        <li>These letters will confirm the successful completion of your internship and provide a recommendation for future opportunities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+       <div class="bg-dark">
+            <div style="width: 80%; margin: auto;" class="d-flex justify-content-between">
+                <div>
+                    <img src="../images/logofooter.png" width="200px">
+                <p class="text-white w-75 pt-3 pb-2">Face challenges as opportunities, much like Cognifyz Technologies navigates innovation. With determination and belief in your potential, every hurdle becomes a stepping stone to success.</p>
+                </div>
+
+                <div class="text-white pt-5 w-50">
+                    <h4>Contact Us</h4>
+                    <p><span class="bi bi-envelope pe-3"></span><a href="mailto:cognifyztechnologies@gmail.com" target="_blank" class="text-white">cognifyztechnologies@gmail.com</a></p>
+                    <p><span class="bi bi-telegram pe-3"></span><a href="https://t.me/cognifyz_technologies" class="text-white" target="_blank">https://t.me/cognifyz_technologies</a></p>
+                    <p><span class="bi bi-linkedin pe-3"></span><a href="https://www.linkedin.com/company/cognifyz-techonologies/" class="text-white" target="_blank">https://www.linkedin.com/company/cognifyz-techonologies/</a></p>
+                </div>
+
+            </div>
+       </div> 
+       <div class="bg-black text-center text-white p-3">
+            <h5>2024 © All rights reserved by Cognifyz Technologies
+            </h5>
+       </div>
+    </footer>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+</body>
+</html>

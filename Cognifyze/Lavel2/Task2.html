@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level2-Task2</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .ison {
+            background-color: grey;
+        }
+
+        .ison+a:hover {
+            background-color: rgb(243, 195, 106);
+        }
+
+        .head-nav ul li a:hover {
+            background-color: rgb(243, 195, 106);
+            padding: 10px;
+        }
+        .navbar {
+            box-shadow: 3px 3px 3px gray;
+        }
+        .cardContainer
+        {
+            display: flex;
+        }
+        .cardContainer .card .logo
+        {
+            width: auto;
+        }
+        .cardContainer .card
+        {
+            margin-left: 30px;
+        }
+        footer
+        {
+            margin: auto;
+            width: 100%;
+            margin-left: 150px;
+        }
+        .navbar-nav 
+        {
+            width: 800px;
+        }
+        @media (max-width: 770px)
+        {
+            .cardContainer
+            {
+                display: block;
+            }
+            .cardContainer .card
+            {
+                margin-left: auto;
+                width: 300px;
+            }
+            footer
+            {
+                font-size: 10px;
+                margin-left: 30px;
+            }
+            footer img
+            {
+                width: 90px;
+                
+            }
+            nav .navbar-brand img
+            {
+                width: 200px;
+            }
+            nav form input
+            {
+                width: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body class="container-fluid" style="margin: 0px; background-image: url(../images/white_leather.png);">
+    <div class="w-100" style="width: 1300px;">
+        <nav class="navbar navbar-expand-lg bg-body-secondary w-100 p-2 d-flex justify-content-between">
+            <div class="navbar-brand">
+                <img src="../images/logo-shop-cart.png">
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="d-flex input-group">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-warning" type="submit">Search</button>
+            </form>
+            <div class="collapse navbar-collapse head-nav fs-5" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="ps-3 nav-item"><a href="#" class="text-decoration-none text-black nav-link"><span
+                                class="bi bi-house-exclamation-fill p-1"></span>Home</a></li>
+                    <li class="ps-4 nav-item"><a href="#" class="text-decoration-none text-black nav-link"><span
+                                class="bi bi-person-fill p-1"></span>My Account</a></li>
+                    <li class="ps-4 nav-item"><a href="#" class="text-decoration-none text-black nav-link"><span
+                                class="bi bi-pen-fill p-1"></span>Free register</a></li>
+                    <li class="ps-4 nav-item"><a href="#" class="text-decoration-none text-black nav-link"><span
+                                class="bi bi-envelope-fill p-1"></span>Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane active" id="home">
+            <div class="carousel slide" data-bs-ride="carousel" id="banner">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="../images/bang.jpg" alt="" class="w-100 h-75">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../images/bang1.jpg" alt="" class="w-100">
+                    </div>
+                     <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../images/ear3.jpeg" alt="" class="w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../images/ring.jpg" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div class="card mt-3 position-relative">
+                    <img src="/images/new.png" alt="" class="position-absolute logo" style="top: -10px; left: -10px;">
+                    <div class="card-body">
+                        <img src="../images/cd3.PNG" style="width: 100%;">
+                    </div>
+                    <div class="card-footer bg-secondary-subtle">
+                        <button class="btn btn-secondary ">View</button>
+                        <span class="bi bi-currency-rupee ms-2">2500.00</span>
+                    </div>
+                </div>
+                <div class="card mt-3 position-relative">
+                    <img src="/images/new.png" alt="" class="position-absolute logo" style="top: -10px; left: -10px;">
+                    <div class="card-body">
+                        <img src="../images/cd2.PNG" style="width: 100%">
+                    </div>
+                    <div class="card-footer bg-secondary-subtle">
+                        <button class="btn btn-secondary">View</button>
+                        <span class="bi bi-currency-rupee ms-2">2500.00</span>
+                    </div>
+                </div>
+                <div class="card mt-3 position-relative">
+                    <img src="/images/new.png" alt="" class="position-absolute logo" style="top: -10px; left: -10px;">
+                    <div class="card-body">
+                        <img src="../images/cd3.PNG" style="width: 100%">
+                    </div>
+                    <div class="card-footer bg-secondary-subtle">
+                        <button class="btn btn-secondary">View</button>
+                        <span class="bi bi-currency-rupee ms-2">2500.00</span>
+                    </div>
+                </div>
+                <div class="card mt-3 position-relative">
+                    <img src="/images/new.png" alt="" class="position-absolute logo" style="top: -10px; left: -10px;">
+                    <div class="card-body">
+                        <img src="../images/d.jpg" style="width: 100%">
+                    </div>
+                    <div class="card-footer bg-secondary-subtle">
+                        <button class="btn btn-secondary">View</button>
+                        <span class="bi bi-currency-rupee ms-2">2500.00</span>
+                    </div>
+                </div>
+                <div class="card mt-3 position-relative">
+                    <img src="/images/new.png" alt="" class="position-absolute logo" style="top: -10px; left: -10px;">
+                    <div class="card-body">
+                        <img src="../images/df.PNG" style="width: 100%">
+                    </div>
+                    <div class="card-footer bg-secondary-subtle">
+                        <button class="btn btn-secondary">View</button>
+                        <span class="bi bi-currency-rupee ms-2">2500.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <div class="bg-dark align-content-center mt-3 align-items-center ps-5">
+        <footer class="footer d-flex">
+            <div class="footer-logo">
+                <img src="../images/logo-shop-cart.png" alt="">
+            </div>
+            <div class="text-white pt-3">
+                <p><b>&copy; copyrights 2024</b></p>
+            </div>
+        </footer>
+    </div>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.js"></script>
+</body>
+
+</html>

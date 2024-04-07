@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image
+        {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 80px;
+            left: 20%;
+            top: 20%;
+            width: 50%;
+            height: 50%;
+            overflow: auto;
+            background-color: white;
+            border: 1px solid gainsboro;
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: black;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        .modal-content img {
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img class="image" src="../images/a.jpg" onclick="openModal('../images/a.jpg')">
+        <img class="image" src="../images/b.jpg" onclick="openModal('../images/b.jpg')">
+        <img class="image" src="../images/c.jpg" onclick="openModal('../images/c.jpg')">
+        <img class="image" src="../images/d.jpg" onclick="openModal('../images/d.jpg')">
+        <img class="image" src="../images/e.jpg" onclick="openModal('../images/e.jpg')">
+        <img class="image" src="../images/f.jpg" onclick="openModal('../images/f.jpg')">
+        <img class="image" src="../images/g.jpg" onclick="openModal('../images/g.jpg')">
+    </div>
+    <div class="modal" id="imageDisplay">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="imageLarge">
+    </div>
+    
+    <script>
+        function openModal(imagesrc)
+        {
+            var div = document.getElementById("imageDisplay");
+            var modalImg = document.getElementById("imageLarge");
+            div.style.display = "block";
+            modalImg.src = imagesrc;
+        }
+        function closeModal() {
+            document.getElementById("imageDisplay").style.display = "none";
+        }
+    </script>
+</body>
+</html>
